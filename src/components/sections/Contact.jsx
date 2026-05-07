@@ -16,8 +16,8 @@ const LottieAnimation = dynamic(
 
 const { contact, animations } = siteContent;
 
-const WHATSAPP_NUMBER = "94779876543";
-const DEFAULT_MESSAGE = `Hello PWA Kwella & Co.,
+const WHATSAPP_NUMBER = "94718293694";
+const DEFAULT_MESSAGE = `Hello PWakwella & Co.,
 
 I would like to inquire about your professional services. Could you please provide more details about your audit and tax advisory offerings?
 
