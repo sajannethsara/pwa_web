@@ -145,7 +145,8 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#135BEC]/10 to-[#135BEC]/5 rounded-3xl blur-2xl scale-105" />
               <LottieAnimation
                 src={animations.hero}
-                className="relative w-full max-w-lg mx-auto"
+                className="opacity-100"
+                style={{ width: "100%", minHeight: 320 }}
               />
             </div>
           </motion.div>

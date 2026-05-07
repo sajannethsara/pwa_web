@@ -74,11 +74,12 @@ export default function CTA() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className="hidden lg:block"
+              className="hidden lg:flex items-center justify-center"
             >
               <LottieAnimation
                 src={animations.cta}
-                className="w-full max-w-sm mx-auto opacity-80"
+                className="opacity-100"
+                style={{ width: "100%", minHeight: 320 }}
               />
             </motion.div>
           </div>

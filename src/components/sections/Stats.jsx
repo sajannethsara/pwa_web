@@ -46,7 +46,7 @@ function AnimatedCounter({ target, suffix = "" }) {
 
 export default function Stats() {
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden">
+    <section className="py-2 lg:py-12 relative overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#135BEC] via-[#135BEC] to-[#0e47c1]" />
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj48cGF0aCBkPSJNMCAyMEgyME0yMCAwVjIwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-50" />
@@ -99,7 +99,7 @@ export default function Stats() {
           >
             <LottieAnimation
               src={animations.stats}
-              className="w-full max-w-md mx-auto opacity-90"
+              className="w-full max-w-sm mx-auto opacity-100"
             />
           </motion.div>
         </div>

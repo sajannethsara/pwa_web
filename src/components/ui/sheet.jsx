@@ -14,9 +14,16 @@ function Sheet({
 }
 
 function SheetTrigger({
+  asChild,
+  children,
   ...props
 }) {
-  return <SheetPrimitive.Trigger data-slot="sheet-trigger" {...props} />;
+  return (
+    <SheetPrimitive.Trigger
+      data-slot="sheet-trigger"
+      {...(asChild ? { render: children } : { children })}
+      {...props} />
+  );
 }
 
 function SheetClose({

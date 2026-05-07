@@ -114,7 +114,8 @@ html {
 }
 
 /* Lottie container sizing */
-.lottie-container svg {
+.lottie-container svg,
+.lottie-container canvas {
   width: 100% !important;
   height: 100% !important;
 }

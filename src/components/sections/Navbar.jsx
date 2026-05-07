@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { siteContent } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
@@ -26,25 +27,22 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "glass border-b border-slate-200/50 shadow-sm"
+          ? "bg-white border-b border-slate-200/50 shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-[#135BEC] flex items-center justify-center shadow-lg shadow-[#135BEC]/25 group-hover:shadow-[#135BEC]/40 transition-shadow">
-              <span className="text-white font-bold text-lg">P</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-xl text-slate-900 tracking-tight">
-                {brand.name}
-              </span>
-              <span className="text-[10px] text-slate-500 uppercase tracking-[0.2em] -mt-0.5 hidden sm:block">
-                {brand.tagline}
-              </span>
-            </div>
+          <a href="#home" className="flex items-center group">
+            <Image
+              src="/logo.svg"
+              alt={brand.fullName}
+              width={133}
+              height={68}
+              className="h-12 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -81,17 +79,13 @@ export default function Navbar() {
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col h-full">
                 <div className="p-6 border-b border-slate-100">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#135BEC] flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">P</span>
-                    </div>
-                    <div>
-                      <span className="font-bold text-lg text-slate-900">
-                        {brand.name}
-                      </span>
-                      <p className="text-xs text-slate-500">{brand.tagline}</p>
-                    </div>
-                  </div>
+                  <Image
+                    src="/logo.svg"
+                    alt={brand.fullName}
+                    width={133}
+                    height={68}
+                    className="h-12 w-auto"
+                  />
                 </div>
                 <nav className="flex-1 p-4">
                   {nav.links.map((link) => (

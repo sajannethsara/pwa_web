@@ -26,11 +26,11 @@ export default function About() {
             className="relative"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-[#135BEC]/5 to-transparent rounded-3xl" />
-              <div className="relative bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+              {/* <div className="absolute -inset-4 bg-gradient-to-br from-[#135BEC]/5 to-transparent rounded-3xl" /> */}
+              <div className="relative">
                 <LottieAnimation
                   src={animations.about}
-                  className="w-full max-w-md mx-auto"
+                  className="w-full max-w-l mx-auto"
                 />
               </div>
               {/* Decorative floating badge */}
